@@ -16,7 +16,8 @@
 
     <script
       src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js"
-      defer></script>
+      defer
+    ></script>
   </head>
   <body>
     <model-viewer
@@ -24,15 +25,24 @@
       alt="A 3D model of a car"
       shadow-intensity="1"
       camera-controls
-      ar>
+      interaction-prompt="none"
+      disable-zoom
+      progress:0
+      max-camera-orbit="auto 90deg auto"
+      min-camera-orbit="auto 90deg auto"
+      disable-tap
+      ar
+    >
     </model-viewer>
 
     <script
       type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
 
     <script
       nomodule
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
   </body>
 </html>
